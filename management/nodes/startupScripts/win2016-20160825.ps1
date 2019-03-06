@@ -41,7 +41,7 @@ New-ItemProperty -Path $winLogonRegistryPath -Name 'DefaultPassword' -Value '<pa
 
 New-ItemProperty -Path $winLogonRegistryPath -Name 'AutoAdminLogon' -Value '1' -PropertyType string -Force
 
-# Cleanup the machine gitconfig file: https://github.com/dotnet/dotnet-ci/issues/358 
+# Cleanup the machine gitconfig file: https://github.com/kbaladurin/dotnet-ci/issues/358 
 Remove-Item -Path "C:\Program Files\Git\mingw64\etc\gitconfig"
 New-Item -Path "C:\Program Files\Git\mingw64\etc\gitconfig" -Type File
 

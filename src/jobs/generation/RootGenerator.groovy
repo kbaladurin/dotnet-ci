@@ -41,7 +41,7 @@ folder('GenPRTest') {}
                             // TODO: Set refspec for VSTS PR
                         }
                         else {
-                            github("dotnet/dotnet-ci")
+                            github("kbaladurin/dotnet-ci")
                             // Set the refspec
                             refspec('+refs/pull/${ghprbPullId}/*:refs/remotes/origin/pr/${ghprbPullId}/*')
                         }
@@ -61,7 +61,7 @@ folder('GenPRTest') {}
                             // TODO: Set refspec for VSTS PR
                         }
                         else {
-                            github("dotnet/dotnet-ci")
+                            github("kbaladurin/dotnet-ci")
                             // Set the refspec
                             refspec('+refs/pull/${ghprbPullId}/*:refs/remotes/origin/pr/${ghprbPullId}/*')
                         }
@@ -90,7 +90,7 @@ folder('GenPRTest') {}
                             credentials('vsts-dotnet-ci-trusted-creds')
                         }
                         else {
-                            github("dotnet/dotnet-ci")
+                            github("kbaladurin/dotnet-ci")
                         }
                     }
 
@@ -108,7 +108,7 @@ folder('GenPRTest') {}
                             credentials('vsts-dotnet-ci-trusted-creds')
                         }
                         else {
-                            github("dotnet/dotnet-ci")
+                            github("kbaladurin/dotnet-ci")
                         }
                     }
 
@@ -259,7 +259,7 @@ job('disable_jobs_in_folder') {
                     credentials('vsts-dotnet-ci-trusted-creds')
                 }
                 else {
-                    github("dotnet/dotnet-ci")
+                    github("kbaladurin/dotnet-ci")
                 }
             }
             branch("refs/heads/${SDKImplementationBranch}")
@@ -303,7 +303,7 @@ job('workspace_cleaner') {
                     credentials('vsts-dotnet-ci-trusted-creds')
                 }
                 else {
-                    github("dotnet/dotnet-ci")
+                    github("kbaladurin/dotnet-ci")
                 }
             }
             branch("refs/heads/${SDKImplementationBranch}")
@@ -349,7 +349,7 @@ job('system_cleaner') {
                     credentials('vsts-dotnet-ci-trusted-creds')
                 }
                 else {
-                    github("dotnet/dotnet-ci")
+                    github("kbaladurin/dotnet-ci")
                 }
             }
             branch("refs/heads/${SDKImplementationBranch}")
@@ -394,7 +394,7 @@ job('swap_space_monitor_remover') {
                     credentials('vsts-dotnet-ci-trusted-creds')
                 }
                 else {
-                    github("dotnet/dotnet-ci")
+                    github("kbaladurin/dotnet-ci")
                 }
             }
             branch("refs/heads/${SDKImplementationBranch}")
@@ -441,7 +441,7 @@ job('node_cleaner') {
                     credentials('vsts-dotnet-ci-trusted-creds')
                 }
                 else {
-                    github("dotnet/dotnet-ci")
+                    github("kbaladurin/dotnet-ci")
                 }
             }
             branch("refs/heads/${SDKImplementationBranch}")
@@ -487,7 +487,7 @@ job('generator_cleaner') {
                     credentials('vsts-dotnet-ci-trusted-creds')
                 }
                 else {
-                    github("dotnet/dotnet-ci")
+                    github("kbaladurin/dotnet-ci")
                 }
             }
             branch("refs/heads/${SDKImplementationBranch}")

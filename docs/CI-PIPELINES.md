@@ -112,9 +112,9 @@ Pipelines improve upon this substantially.  Becuase the pipeline script, where m
 
 The following details the process by which you can onboard your projects onto the new pipelines.
 
-1. Make a PR that adds an entry to the repo list. dotnet/dotnet-ci and dotnet/dotnet-ci-internal.  dotnet-ci should be used for OSS pipelines, dotnet-ci-internal for VSTS/private pipelines.
-    1. [OSS](https://github.com/dotnet/dotnet-ci/blob/master/data/repolist.txt)
-    2. [VSTS/Internal](https://github.com/dotnet/dotnet-ci-internal/blob/master/data/repolist.txt)
+1. Make a PR that adds an entry to the repo list. kbaladurin/dotnet-ci and kbaladurin/dotnet-ci-internal.  dotnet-ci should be used for OSS pipelines, dotnet-ci-internal for VSTS/private pipelines.
+    1. [OSS](https://github.com/kbaladurin/dotnet-ci/blob/master/data/repolist.txt)
+    2. [VSTS/Internal](https://github.com/kbaladurin/dotnet-ci-internal/blob/master/data/repolist.txt)
     3. The entry should have the following characteristics, in addition to the other typical parameters:
         * OSS GitHub pipelines
             * definitionScript=<path to declaration script in your repo>

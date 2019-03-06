@@ -90,7 +90,7 @@ class Repo {
         // File name/path is usually netci.groovy, but can be set arbitrarily
         String definitionScript = 'netci.groovy'
         // Repo for Utilities that are used by the job
-        String utilitiesRepo = isVSTS ? 'Tools/DotNet-CI-Trusted' : 'dotnet/dotnet-ci'
+        String utilitiesRepo = isVSTS ? 'Tools/DotNet-CI-Trusted' : 'kbaladurin/dotnet-ci'
         // Branch that the utilities should be read from
         String utilitiesRepoBranch = defaultUtilitiesBranch
         // VSTS only: Project collection.

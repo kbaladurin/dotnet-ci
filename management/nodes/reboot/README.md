@@ -3,7 +3,7 @@
 Follow the setup steps from v-jiba to get a triple-boot machine</br>
 *Note: To connect your laptop to the same network as your master computer, you may need a wired connection if you have driver issues*
 
-*Note: Consider looking at <https://github.com/dotnet/dotnet-ci-internal/blob/master/docs/NODE-STARTUP.md> for how to setup your connection to Jenkins*
+*Note: Consider looking at <https://github.com/kbaladurin/dotnet-ci-internal/blob/master/docs/NODE-STARTUP.md> for how to setup your connection to Jenkins*
 
 **Note**: This setup was made assuming that there is a shared drive between all operating systems.</br>
  + This drive should contain a file called ```reboot_url.txt``` which specifies where to find Python file that manages rebooting the operating system</br>
@@ -17,15 +17,15 @@ Follow the setup steps from v-jiba to get a triple-boot machine</br>
 1. Once you install the plugin, you need to go to ```Manage Jenkins > Configure System > Cloud``` and select ```Add New Cloud > Os Provisioner```
 2. Place in the ```SHARE``` drive a file called ```reboot_url.txt``` 
 3. In the ```reboot_url``` file, add a link to where the reboot script is stored.</br>
-  *Example*: <https://github.com/dotnet/dotnet-ci/blob/master/management/nodes/reboot/tripleboot-reboot-script.py>
+  *Example*: <https://github.com/kbaladurin/dotnet-ci/blob/master/management/nodes/reboot/tripleboot-reboot-script.py>
 
 ### Windows
 1. Setup auto-login to the admin account (See <https://support.microsoft.com/en-us/kb/324737>)
 2. Turn off sleep mode (from Power Options in Control Panel)
-3. Exctract the contents of <https://github.com/dotnet/dotnet-ci/tree/master/management/nodes/reboot/windows> to a folder called ```reboot``` on your desktop
+3. Exctract the contents of <https://github.com/kbaladurin/dotnet-ci/tree/master/management/nodes/reboot/windows> to a folder called ```reboot``` on your desktop
   1. Download TortoiseSVN from <https://tortoisesvn.net/downloads.html>
   2. Right-click on your desktop and select ```TurtoiseSVN>Export```
-  3. For URL of repository enter ```https://github.com/dotnet/dotnet-ci/trunk/management/nodes/reboot/windows``` (*Note: The URL uses ```trunk``` and not ```tree/master```*)
+  3. For URL of repository enter ```https://github.com/kbaladurin/dotnet-ci/trunk/management/nodes/reboot/windows``` (*Note: The URL uses ```trunk``` and not ```tree/master```*)
   4. For the Export directory enter ```C:\Useres\USERNAME_HERE\Desktop\reboot```
   5. Press OK
 4. Setup the agent for this OS on Jenkins</br>
@@ -70,9 +70,9 @@ Follow the setup steps from v-jiba to get a triple-boot machine</br>
 3. ```sudo apt-get update```
 4. ```sudo apt-get upgrade```
 5. Install Java using ```sudo apt-get install default-jre```
-6.  Download all the files from https://github.com/dotnet/dotnet-ci/tree/master/management/nodes/reboot/ubuntu into a folder called ```reboot``` on your desktop
+6.  Download all the files from https://github.com/kbaladurin/dotnet-ci/tree/master/management/nodes/reboot/ubuntu into a folder called ```reboot``` on your desktop
   1. ```sudo apt-get install subversion```
-  2. ```svn export https://github.com/dotnet/dotnet-ci/trunk/management/nodes/reboot/ubuntu $HOME/Desktop/reboot```</br>
+  2. ```svn export https://github.com/kbaladurin/dotnet-ci/trunk/management/nodes/reboot/ubuntu $HOME/Desktop/reboot```</br>
 7. If the ```SHARE``` drive was not set to mount on boot automatically (you can check ```etc/fstab``` to see if the ```SHARE``` drive is missing)
   1. Open the ```/media/SHARE``` folder inside the GUI file viewer to mount the ```SHARE``` drive.
   2. Run ```sudo /bin/sh $HOME/Desktop/reboot/mount_cmd.sh```</br>
@@ -96,8 +96,8 @@ Follow the setup steps from v-jiba to get a triple-boot machine</br>
   2. Set ```Turn display off after``` to ```Never```
 3. Download the latest JDK for OSX from <http://www.oracle.com/technetwork/java/javase/downloads>
 4. '''xcode-select --install'''
-5. Download all the files from https://github.com/dotnet/dotnet-ci/tree/master/management/nodes/reboot/osx into a folder called ```reboot``` on your desktop
-  1. ```svn export https://github.com/dotnet/dotnet-ci/trunk/management/nodes/reboot/ubuntu $HOME/Desktop/reboot```
+5. Download all the files from https://github.com/kbaladurin/dotnet-ci/tree/master/management/nodes/reboot/osx into a folder called ```reboot``` on your desktop
+  1. ```svn export https://github.com/kbaladurin/dotnet-ci/trunk/management/nodes/reboot/ubuntu $HOME/Desktop/reboot```
   2. Accept the certificate
 6. Install Python3 from <https://www.python.org/downloads/mac-osx/>
 7. Modify the last line of ```/etc/sudoers``` to allow the program to run under root provilege</br>

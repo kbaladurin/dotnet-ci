@@ -116,10 +116,10 @@ The generator job recieves a number of incoming parameters.  On all jobs, you'll
 ### Build/Job construction functionality
 
 * Utilities.getFullJobName(projectName, jobName, isPRJob) - Constructs a full job name based.  
-* Utilities.setMachineAffinity(job, osName, version) - Sets 'job' to execute on a machine label obtained by looking up OS 'osName' at version 'version' in the image map.  Typically, the version is specific as 'latest'. The image map is located at https://github.com/dotnet/dotnet-ci/blob/master/src/org/dotnet/ci/util/Agents.groovy#L36. ***Note: This area of CI will come under change in the near future, and setMachineAffinity may change significantly.***
+* Utilities.setMachineAffinity(job, osName, version) - Sets 'job' to execute on a machine label obtained by looking up OS 'osName' at version 'version' in the image map.  Typically, the version is specific as 'latest'. The image map is located at https://github.com/kbaladurin/dotnet-ci/blob/master/src/org/dotnet/ci/util/Agents.groovy#L36. ***Note: This area of CI will come under change in the near future, and setMachineAffinity may change significantly.***
 * Utilities.standardJobSetup(job project, isPR, branch) - Call after constructing a new job (see above).  Sets up the default options for a job, including source code.  'branch' should be passed in the form */branch (see above).
 * Utilities.setJobTimeout(job, jobTimeoutInMinutes) - Must be called after standardJobSetup.  Sets the job timeout in minutes
-* Utilities.addArchival(job, archivalSettings) - Adds archival with the set of specified settings.  A bit easier to use than the old style below.  Please see [ArchivalSettings](https://github.com/dotnet/dotnet-ci/blob/master/src/jobs/generation/ArchivalSettings.groovy) for complete information on constructing an archival setup. Example:
+* Utilities.addArchival(job, archivalSettings) - Adds archival with the set of specified settings.  A bit easier to use than the old style below.  Please see [ArchivalSettings](https://github.com/kbaladurin/dotnet-ci/blob/master/src/jobs/generation/ArchivalSettings.groovy) for complete information on constructing an archival setup. Example:
     ```
     def archivalSettings = new ArchivalSettings()
     archivalSettings.addFiles("**/artifacts/**")
