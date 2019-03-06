@@ -266,6 +266,8 @@ repos.each { repoInfo ->
 def dslFactory = this
 repos.each { repoInfo ->
 
+    println "repoInfo.server ${repoInfo.server}"
+
     // Determine whether we should skip this repo becuase it resides on a different server
     if (repoInfo.server != ServerName) {
         return;
