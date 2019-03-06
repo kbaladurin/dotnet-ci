@@ -227,7 +227,7 @@ class GithubTriggerBuilder implements TriggerBuilder {
                     extensions {
                         commitStatus {
                             context(this._context)
-                            updateQueuePosition(true)
+                            //updateQueuePosition(true)
                         }
                     }
                     

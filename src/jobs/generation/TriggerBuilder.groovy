@@ -265,7 +265,7 @@ class TriggerBuilder {
                     extensions {
                         commitStatus {
                             context(this.context)
-                            updateQueuePosition(true)
+                            //updateQueuePosition(true)
                         }
                     }
                     
