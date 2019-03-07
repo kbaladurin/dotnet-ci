@@ -328,13 +328,13 @@ class Utilities {
                 }
             }
 
-            if (job instanceof javaposse.jobdsl.dsl.jobs.BuildFlowJob) {
-                // Needs a workspace to avoid building other branches when not needed.
-                configure {
-                    def buildNeedsWorkspace = it / 'buildNeedsWorkspace'
-                    buildNeedsWorkspace.setValue('true')
-                }
-            }
+//            if (job instanceof javaposse.jobdsl.dsl.jobs.BuildFlowJob) {
+//                // Needs a workspace to avoid building other branches when not needed.
+//                configure {
+//                    def buildNeedsWorkspace = it / 'buildNeedsWorkspace'
+//                    buildNeedsWorkspace.setValue('true')
+//                }
+//            }
         }
 
         // Add netci.groovy as default.  Only add if it's a PR.
