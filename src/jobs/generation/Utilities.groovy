@@ -871,17 +871,17 @@ class Utilities {
      * @param job Job to modify
      */
     def static addReproBuild(def job) {
-        job.with {
-            publishers {
-                reproToolPublisher {
-                    StorageName("workspaceUpload")
-                    StorageAccount("reproworkspace")
-                    StorageContainer("workspace")
-                    APIBaseURI("https://repro-tool.westus2.cloudapp.azure.com/")
-                    CredentialsId("")
-                }
-            }
-        }
+        //job.with {
+        //    publishers {
+        //        reproToolPublisher {
+        //            StorageName("workspaceUpload")
+        //            StorageAccount("reproworkspace")
+        //            StorageContainer("workspace")
+        //            APIBaseURI("https://repro-tool.westus2.cloudapp.azure.com/")
+        //            CredentialsId("")
+        //        }
+        //    }
+        //}
     }
 
     /**
