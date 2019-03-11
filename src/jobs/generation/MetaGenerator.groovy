@@ -245,6 +245,10 @@ repos.each { repoInfo ->
         searchRepoInfo.branch != repoInfo.branch
     }
 
+    println "repoInfo.server ${repoInfo.server}"
+    println "repoInfo.project ${repoInfo.project}"
+    println "repoInfo.branch ${repoInfo.branch}"
+
     // Consistency check
     // Find other projects that have the same project, same branch, and same definition script
     assert repos.find { searchRepoInfo ->

@@ -67,10 +67,6 @@ kbaladurin/dotnet-ci branch=master definitionScript=tests/pipeline/tests.groovy 
 # Tests for DSL
 kbaladurin/dotnet-ci branch=master definitionScript=tests/dsl/*.groovy isDSLTest=true server=test-server subFolder=dslTests
 # Tests for pipelines
-Tools/DotNet-CI-Trusted credentials=vsts-dotnet-ci-trusted-creds collection=mseng branch=master definitionScript=tests/pipeline/tests.groovy server=dotnet-vsts subFolder=pipelineTests
-# Tests for dsl
-Tools/DotNet-CI-Trusted credentials=vsts-dotnet-ci-trusted-creds collection=mseng branch=master definitionScript=tests/dsl/*.groovy isDSLTest=true server=dotnet-vsts subFolder=dslTests
-# Tests for pipelines
 kbaladurin/dotnet-ci branch=master definitionScript=tests/pipeline/tests.groovy server=test-server subFolder=pipelineTests
 # Tests for DSL
 kbaladurin/dotnet-ci branch=master definitionScript=tests/dsl/*.groovy isDSLTest=true server=test-server subFolder=dslTests
