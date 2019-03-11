@@ -53,20 +53,3 @@ dotnet/corefxlab branch=master server=test-server
 dotnet/corefxlab branch=release/2.1 server=test-server
 dotnet/corert branch=master server=test-server
 dotnet/corert branch=r2r server=test-server
-
-# Tests for pipelines
-kbaladurin/dotnet-ci branch=master definitionScript=tests/pipeline/tests.groovy server=test-server subFolder=pipelineTests
-# Tests for DSL
-kbaladurin/dotnet-ci branch=master definitionScript=tests/dsl/*.groovy isDSLTest=true server=test-server subFolder=dslTests
-# Tests for pipelines
-kbaladurin/dotnet-ci branch=master definitionScript=tests/pipeline/tests.groovy server=test-server subFolder=pipelineTests
-# Tests for DSL
-kbaladurin/dotnet-ci branch=master definitionScript=tests/dsl/*.groovy isDSLTest=true server=test-server subFolder=dslTests
-# Tests for pipelines
-kbaladurin/dotnet-ci branch=master definitionScript=tests/pipeline/tests.groovy server=test-server subFolder=pipelineTests
-# Tests for DSL
-kbaladurin/dotnet-ci branch=master definitionScript=tests/dsl/*.groovy isDSLTest=true server=test-server subFolder=dslTests
-# Tests for pipelines
-kbaladurin/dotnet-ci branch=master definitionScript=tests/pipeline/tests.groovy server=test-server subFolder=pipelineTests
-# Tests for DSL
-kbaladurin/dotnet-ci branch=master definitionScript=tests/dsl/*.groovy isDSLTest=true server=test-server subFolder=dslTests
